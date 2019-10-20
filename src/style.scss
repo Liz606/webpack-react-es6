@@ -1,0 +1,45 @@
+body,p,li,ul,table,a{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+$wrapWidth: 1000px;
+$footerHight: 50px;
+.container{
+    width: 100%;
+    .wrap{
+        width: $wrapWidth;
+        margin: 0 auto;
+        position: relative;
+        header{
+            width: 100%;
+            height: 160px;
+            background: skyblue;
+        }
+        .content{
+            width: 100%;
+            height: 1000px;
+            background: ghostwhite;
+            aside{
+                width: 200px;
+                background: greenyellow;
+                height: 100%;
+                float: left;
+            }
+            article{
+                background: pink;
+                height: 100%;
+                padding-bottom: $footerHight;
+            }
+        }
+    }
+    footer{
+        width: $wrapWidth;
+        margin: 0 auto;
+        height: $footerHight;
+        background: skyblue;
+        position: fixed;
+        bottom: 0;
+    }
+}
